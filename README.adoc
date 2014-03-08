@@ -1,0 +1,19 @@
+znc-modules
+===========
+
+Modules for http://wiki.znc.in/ZNC 
+
+  * antiping: If someone writes "ping" or "<yournick> ping" (aka. "an evil empty ping") this will auto-reply asking
+              user to add more context.
+              
+Installation
+============
+
+Have a running ZNC setup that has Python support then copy (or symbolic link) this repository into '.znc/modules'.
+
+Then via irc connected to ZNC do the following:
+
+   /znc LoadMod modpython
+   /znc LoadMod antiping
+   
+
