@@ -37,7 +37,6 @@ class antiping(znc.Module):
         return self.GetNetwork().GetCurNick() in message.s and self.isPrivAntiPing(message)
 
     def process(self, nick, channel, message):
-        self.PutModule('Blah')
         if channel is None:
            if self.isPrivAntiPing(message):
               self.PutModule('Antiping from {0}: "{1}"'.format(nick.GetNick(),message.s))
